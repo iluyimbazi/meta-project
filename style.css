@@ -36,30 +36,27 @@ body {
     max-height: 100%;
     width: 100vw;
     max-width: 100%;
-    scrollbar-width: none;
     overflow-x: hidden;
-  /* Set font-size back to it's original 16px by using 1.6rem. */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
     font-size: 1.6rem;
     background-color: var(--color-background);
-    list-style-type: none; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 /* TYPOGRAPHY */
-h1, h2 {
-    font-family: var(--font-text);
-
-}
 h1 {
-    padding: 2rem 0;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     color: var(--color-primary);
 }
-h1 {
-    font-size: 48px;
-}
+
 
 h2 {
-    font-size: 36px;
+    font-size: 2rem;
 }
 
 
