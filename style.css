@@ -210,3 +210,45 @@ footer img {
     flex: 0 0 auto; 
     padding-right: 2rem;
 }
+
+
+/* Responsive styles for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column; /* Stack logo and nav vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 20px; /* Add space between logo and nav */
+    }
+
+    /* Adjust navigation menu for smaller screens */
+    .menu {
+        flex-direction: column; /* Stack nav items vertically */
+        width: 100%; /* Make nav take full width */
+    }
+
+    .menu-links ul {
+        padding: 10px; /* Add padding for nav items */
+    }
+
+    .menu-links li {
+        margin-bottom: 10px; /* Add space between nav items */
+    }
+}
+
+/* Responsive styles for very small screens (e.g., phones) */
+@media (max-width: 480px) {
+    /* Adjust logo size for very small screens */
+    .logo img {
+        width: 30px; /* Reduce logo width */
+    }
+
+    /* Increase spacing between nav items for very small screens */
+    .menu-links li {
+        margin-bottom: 15px;
+    }
+}
