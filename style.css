@@ -1,0 +1,215 @@
+/* ---VARIABLES--- */
+/* Setting variables, for example: colours and fonts across the whole site from
+just one, easy to manage section. */
+:root {
+    --color-primary: #0e0e0e;
+    --color-secondary: #ffff;
+    --color-shadow: none;
+    --color-hover-background: #c416aa;
+    --color-button: #530dcc;
+    --color-heading: #066339;
+    --color-card-background: #cddbcb;
+    --font-text: rsystem-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+}
+
+/* ---CSS RESET--- */
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+/* Set root font-size for rem to 62.5% to change the font-size default value to 10px. */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    max-height: 100%;
+    width: 100vw;
+    max-width: 100%;
+    scrollbar-width: none;
+    overflow-x: hidden;
+  /* Set font-size back to it's original 16px by using 1.6rem. */
+    font-size: 1.6rem;
+    background-color: var(--color-background);
+    list-style-type: none; 
+}
+
+
+/* TYPOGRAPHY */
+h1, h2 {
+    font-family: var(--font-text);
+
+}
+h1 {
+    padding: 2rem 0;
+    color: var(--color-primary);
+}
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+
+p,
+a,
+li {
+    font-family: var(--font-text);
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.2rem 0;
+}
+a :hover {
+    text-decoration: underline;
+}
+
+/* ---IMAGES--- */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section { margin-bottom: 40px;
+}
+
+/* ---FORMS AND BUTTONS--- */
+button {
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: var(--color-button);
+    color: var(--color-secondary);
+    border: 1px;
+    border-radius: 10rem;
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: var(--color-hover-background);
+    color: var(--color-background);
+}
+
+
+
+.header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    align-self: stretch;
+    box-shadow: 0 5rem 3rem var(--color-shadow);
+    padding: 0.2rem;
+    z-index: 1;
+}
+
+.logo {
+  display: flex; /* Make the logo container a flex container */
+  align-items: center; /* Vertically center elements */
+}
+
+.logo img {
+    min-height: 5rem;
+    height: 10rem;
+    margin-left: 1rem;
+    padding-right: 20px;
+}
+
+.logo h1 {
+    color: var(--color-heading);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #066339;
+}
+.menu-links {
+    display: flex; 
+    list-style: none; 
+    margin: 0;
+}
+nav ul li :hover {
+    border-bottom: 2px solid var(--color-primary);
+}
+nav li {
+    justify-content: center;
+    display: inline-flex;
+    margin: 0;
+    text-transform: none;
+    margin-right: 2rem;
+    padding: 20px 20px 20px 20px;
+}
+nav a {
+    color: var(--color-secondary);
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(193, 132, 132, 0.258), rgb(96, 104, 115)),
+    url("./header.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 480px;
+    text-align: center;
+    justify-content: center;
+    color: var(--color-secondary);
+}
+.banner button {
+    margin: 0 auto;
+}
+
+
+.cards {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+
+.card {
+    flex: 0 0 33.33%; 
+    margin: 10px;
+    background-color: var(--color-card-background);
+    
+}
+
+
+
+.card img {
+    display: block;
+    height: 320px;
+    width: 100%;
+}
+
+footer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; /
+}
+
+.footer-logo {
+    flex: 0 0 auto; 
+    width: 100px;
+    height: 100px;
+    padding-left: 2rem;
+}
+
+
+.rights {
+    flex: 0 0 auto; 
+    padding-right: 2rem;
+}
